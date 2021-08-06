@@ -25,4 +25,4 @@ app.use(session({
 
 app.use('/', routes())
 
-app.listen(3001)
+app.listen(process.env.PORT || 3001)
