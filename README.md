@@ -41,7 +41,7 @@ Recibe la información necesaria para crear un evento, se verifica que exista el
 ```javascript
 // Request
 {
-  name: "Event",
+  title: "Event",
   date: "Jul 19 19:30",
   description: "This is a very good event",
   location: "Mar del Plata",
@@ -52,7 +52,7 @@ Recibe la información necesaria para crear un evento, se verifica que exista el
 
 // Response
 {
-  name: "Event",
+  title: "Event",
   date: "2001-07-19T22:30:00.000Z",
   description: "This is a very good event",
   location: "Mar del Plata",
@@ -70,7 +70,7 @@ Devuelve todos los eventos creados.
 ```javascript
 // Response
 {
-  name: "Event",
+  title: "Event",
   date: "2001-07-19T22:30:00.000Z",
   description: "This is a very good event",
   location: "Mar del Plata",
@@ -80,7 +80,7 @@ Devuelve todos los eventos creados.
   id: "610c80901f033720402037c6"
 },
 {
-  name: "Event 2",
+  title: "Event 2",
   date: "2001-07-19T22:30:00.000Z",
   description: "This is another very good event",
   location: "Mar del Plata",
@@ -98,7 +98,7 @@ Devuelve los eventos destacados.
 ```javascript
 // Response
 {
-  name: "Event",
+  title: "Event",
   date: "2001-07-19T22:30:00.000Z",
   description: "This is a very good event",
   location: "Mar del Plata",
