@@ -1,7 +1,7 @@
-require('./config/mongo')
+require('../config/mongo')
 
 const express = require('express')
-const routes = require('./routes')
+const routes = require('../routes')
 const session = require('express-session')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')

@@ -7,15 +7,15 @@ const UserControllers = require('../controllers/UserControllers')
 const Router = () => {
 
   // Events
-  router.get('/events', EventControllers.getEvents)
-  router.get('/highlights', EventControllers.getHighlightEvents)
-  router.post('/events', EventControllers.createEvents)
+  router.get('/api/events', EventControllers.getEvents)
+  router.get('/api/highlights', EventControllers.getHighlightEvents)
+  router.post('/api/events', EventControllers.createEvents)
 
   // Login
-  router.post('/login', UserControllers.login)
+  router.post('/api/login', UserControllers.login)
 
   // Register
-  router.post('/register', UserControllers.register)
+  router.post('/api/register', UserControllers.register)
   return router
 }
 
