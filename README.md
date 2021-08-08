@@ -1,10 +1,10 @@
 # Examen Final para el curso de Node.js - Lucas Matias Ojeda de Sousa
 
-## Link de la API: <https://final-test-cluster-catamarca.herokuapp.com/>
+## Link de la API: <https://cluster-final-test.vercel.app/>
 
 Esta Api REST consta de 4 endpoints:
 
-### POST: /register
+### POST: /api/register
 
 Registra un usuario al recibir un username y un password.
 Se verifica que el usuario este disponible.
@@ -17,7 +17,7 @@ De ser asi, el password es encriptado y almacenado en la base de datos.
 }
 ```
 
-### POST: /login
+### POST: /api/login
 
 Recibe un username y un password, se verifica que sean correctos, y de ser asi se devuelve un token, necesario para poder crear eventos, que se almacena en una cookie la cual expira 2 horas despues de haber sido creada.
 
@@ -34,7 +34,7 @@ Recibe un username y un password, se verifica que sean correctos, y de ser asi s
 }
 ```
 
-### POST: /events
+### POST: /api/events
 
 Recibe la información necesaria para crear un evento, se verifica que exista el token almacenado en la cookie y de ser asi se crea el evento y se almacena en la base de datos. Si no existe el token, se solicita iniciar sesión.
 
@@ -63,7 +63,7 @@ Recibe la información necesaria para crear un evento, se verifica que exista el
 }
 ```
 
-### GET: /events
+### GET: /api/events
 
 Devuelve todos los eventos creados.
 
@@ -91,7 +91,7 @@ Devuelve todos los eventos creados.
 }
 ```
 
-### GET: /highlights
+### GET: /api/highlights
 
 Devuelve los eventos destacados.
 
